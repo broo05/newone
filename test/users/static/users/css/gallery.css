@@ -1,0 +1,162 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set a clean background color */
+body {
+  background-color: #f4f4f4;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Center the content */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Style the category list */
+.category-section {
+  margin-bottom: 20px;
+}
+
+.category-list {
+  list-style: none;
+  padding: 0;
+  /* text-align: center; */
+}
+
+.category-list li {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.category-list a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  padding: 8px 15px;
+  border-radius: 4px;
+  background-color: #eee;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.category-list a:hover {
+  background-color: #ddd;
+}
+
+/* Style the image container */
+.image-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.image-wrapper {
+  width: 25%; /* Display 4 images in a row for laptops and PCs */
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  padding: 0 10px;
+  position: relative;
+}
+
+/* Adjust layout for mobile phones */
+@media only screen and (max-width: 767px) {
+  .image-wrapper {
+    width: 33.33%; /* Display 3 images in a row for mobile phones */
+  }
+}
+
+/* Style the preview images */
+.preview-image {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+/* Style the download button container */
+
+
+/* Style the download button */
+.download-button {
+  background-color: #3498db;
+  color: #fff;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.download-button:hover {
+  background-color: #2980b9;
+}
+
+/* Style the modal */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  overflow: auto;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  width: auto;
+  max-width: 80%; /* Adjust as needed */
+  height: auto;
+  max-height: 80vh; /* Adjust as needed */
+  border-radius: 8px;
+}
+
+.close {
+  color: #fff;
+  font-size: 30px;
+  font-weight: bold;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  cursor: pointer;
+}
+
+/* Close modal when clicking outside the image */
+.modal-content {
+  cursor: pointer;
+}
+
+/* Style the close button */
+.close {
+  display: none;
+}
+
+/* Display the close button only when the modal is open */
+.modal.active .close {
+  display: block;
+}
+
+/* Adjust modal content for smaller screens */
+@media only screen and (max-width: 767px) {
+  .modal-content {
+    max-width: 90%; 
+    height: auto;/* Adjust as needed for smaller screens */
+  }
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LoveMe - Love Calculator</title>
+    <link rel="stylesheet" href="test.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="LoveMe Logo">
+            <h1>LoveMe</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Love Test</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="love-calculator">
+            <h2>Love Calculator</h2>
+            <div class="form-container">
+                <label for="girlName">Girl's Name:</label>
+                <input type="text" id="girlName" placeholder="Enter girl's name">
+
+                <label for="boyName">Boy's Name:</label>
+                <input type="text" id="boyName" placeholder="Enter boy's name">
+
+                <button onclick="calculateLove()">Calculate Love</button>
+
+                <div id="loveResult"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 LoveMe - Love Calculator</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

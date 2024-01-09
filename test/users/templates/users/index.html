@@ -1,0 +1,58 @@
+{% extends 'users/base.html' %}
+
+{% load static %}
+
+{% block content %}
+
+    <!-- Hero Section -->
+    <link rel="stylesheet" href="{% static 'users/css/styles.css' %}">
+    <section class="hero">
+        <!-- <img src="{% static 'users/img/love.png' %}" alt="Hero Image"> -->
+        <div class="hero-content">
+            <h1>Discover the Beauty of Free Photos</h1>
+            <p>Unleash Your Creativity with Our Stunning Collection of High-Quality Images – All Absolutely Free!</p>
+            <a href="{% url 'image_gallery' %}" class="cta-button">Explore the Gallery</a>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+<!-- Additional Content -->
+<section class="additional-content">
+    <div class="feature">
+        <h2>Our Features</h2>
+        <ul>
+            <li>Unlimited Downloads</li>
+            <li>Easy Navigation</li>
+            <li>Commercial Use Allowed</li>
+            <li>Responsive Design</li>
+        </ul>
+    </div>
+</section>
+
+<!-- Testimonials -->
+
+<section class="testimonials">
+    <div class="testimonial">
+        <p>"Amazing resource for free images! The quality is unparalleled."</p>
+    </div>
+    <!-- Add more testimonials as needed -->
+</section>
+<!-- About Us -->
+<!-- <section class="about-us">
+    <h2>About Us</h2>
+    <p>Provide a brief story about your website, mission, and team. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt, erat nec aliquet lacinia, arcu massa eleifend justo, nec suscipit lectus urna nec nisl.</p>
+</section> -->
+
+<!-- Contact Us -->
+<section class="contact-us">
+    <h2>Contact Us</h2>
+    <p>If you have any questions or feedback, feel free to contact us at <a href="mailto:nepalihoni226@gmail.com">nepalihoni226@gmail.com</a>.</p>
+</section>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 NepGallery. All rights reserved. | <a href="#terms">Terms of Use</a> | <a href="#privacy">Privacy Policy</a></p>
+    </footer>
+
+{% endblock %}

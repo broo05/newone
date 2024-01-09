@@ -1,0 +1,264 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+/* Apply a box-sizing border-box model */
+* {
+  box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+
+}
+
+
+
+header {
+  background-color: #40879e; /* Update the background color */
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.315);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo a {
+  display: flex; 
+  align-items: center; 
+  text-decoration: none; 
+}
+
+.logo img {
+  max-width: 50px;
+  margin-right: 10px;
+}
+
+.logo div {
+  font-size: 18px;
+  font-weight: bold;
+  color: rgb(24, 223, 156);
+}
+
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+
+nav a {
+  text-decoration: none;
+  color: rgb(24, 223, 156);
+  font-weight: bold;
+  font-family: 'Quicksand', sans-serif; 
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #38d040; /* Update the hover color */
+}
+
+/* Hero Section Styles */
+.hero {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #fff; 
+}
+
+.hero h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  font-family: 'Quicksand', sans-serif; /* Use Google Fonts for customization */
+}
+
+.hero p {
+  font-size: 1em;
+  margin-bottom: 30px;
+  color: #666; /* Update the font color */
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #e5554e; /* Update the button color */
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  font-family: 'Quicksand', sans-serif; /* Use Google Fonts for customization */
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #d44c48; /* Update the button hover color */
+}
+
+
+/* Add this to your existing CSS file or create a new one */
+
+.additional-content {
+    background-color: #f4f4f4;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.feature {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.feature h2 {
+    color: #333;
+}
+
+.feature ul {
+    list-style: none;
+    padding: 0;
+}
+
+.feature li {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.testimonials {
+    padding: 0px 0;
+    text-align: center;
+}
+
+.testimonial {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.about-us {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.about-us h2 {
+    color: #333;
+}
+
+.contact-us {
+    background-color: #f4f4f4;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.contact-us h2 {
+    color: #333;
+}
+
+.contact-us a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+.contact-us a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+/* Footer section */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* End of footer section */
+
+
+
+/* Responsive Styles */
+@media only screen and (max-width: 768px) {
+  /* Header Styles for Mobile */
+  header {
+    padding: 0;
+  }
+
+  .logo{
+    margin-left: 2%;
+    display: flex;
+  }
+
+  nav {
+    display: flex;
+    margin-top: 10px;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+  }
+
+  nav li {
+    margin: 0;
+    margin-bottom: 10px;
+    margin-right: 10px;
+  }
+
+  nav a {
+    padding: 10px 0;
+    display: block;
+    font-size: 0.9em;
+  }
+
+  /* Hero Section Styles for Mobile */
+  .hero {
+    padding: 40px 20px;
+  }
+
+  .hero h1 {
+    font-size: 2em;
+  }
+
+  .hero p {
+    font-size: 1em;
+  }
+
+  .cta-button {
+    font-size: 0.9em;
+  }
+
+}

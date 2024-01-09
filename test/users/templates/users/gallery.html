@@ -1,0 +1,50 @@
+{% extends 'users/base.html' %} {% load static %} {% block content %}
+<link rel="stylesheet" href="{% static 'users/css/gallery.css' %}" />
+
+<div class="category-section">
+  <h2>Categories:</h2>
+  <ul class="category-list">
+    <li><a href="{% url 'image_gallery' %}">All</a></li>
+    {% for category in categories %}
+    <li><a href="?category={{ category.id }}">{{ category.name }}</a></li>
+    {% endfor %}
+  </ul>
+</div>
+
+<div class="image-container">
+  {% for image in images %}
+  <div class="image-wrapper">
+    <a href="#" onclick="showImageModal('{{ image.image.url }}')">
+      <img
+        src="{{ image.image.url }}"
+        alt="{{ image.title }}"
+        class="preview-image"
+      />
+    </a>
+    <div class="download-container">
+      <a href="{% url 'download_image' image.id %}" download class="download-button">Download</a>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+
+<!-- Modal for displaying full-size image -->
+<div id="imageModal" class="modal" onclick="closeImageModal()">
+  <span class="close" onclick="closeImageModal()">&times;</span>
+  <img id="modalImage" class="modal-content" />
+</div>
+
+<script>
+  function showImageModal(imageUrl) {
+    var modal = document.getElementById("imageModal");
+    var modalImg = document.getElementById("modalImage");
+    modal.style.display = "flex"; // Use flex to center the content vertically
+    modalImg.src = imageUrl;
+  }
+
+  function closeImageModal() {
+    var modal = document.getElementById("imageModal");
+    modal.style.display = "none";
+  }
+</script>
+{% endblock %}
